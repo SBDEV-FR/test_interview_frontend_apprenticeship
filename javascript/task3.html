@@ -1,0 +1,30 @@
+<!-- Task 3: Basic Fetch -->
+
+<!-- This is the unordered list where the todo titles will appear -->
+<ul id="todoList"></ul>
+
+<script>
+// Fetch data from the API endpoint
+fetch('https://jsonplaceholder.typicode.com/todos')
+    .then(response => response.json()) // Convert the response to JSON
+    .then(data => {
+        // take the first 5 todos from the date
+        let firstFiveTodos = data.slice(0, 5);
+        
+        // Loop through each todos and create a list item for it
+        firstFiveTodos.forEach(todo => {
+            // Create a new list item element
+            let listItem = document.createElement("li");
+            
+            // Set the text content of the list item to the todo's title
+            listItem.textContent = todo.title;
+            
+            // Append the list item to an unordered list on the page
+            document.getElementById("todoList").appendChild(listItem);
+        });
+    })
+    .catch(error => {
+        // If there's an error with the fetch request, log in the console
+        console.error('Error fetching the todos:', error);
+    });
+</script>
