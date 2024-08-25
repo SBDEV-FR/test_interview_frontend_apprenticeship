@@ -1,0 +1,14 @@
+<!-- Task 2: DOM Interaction -->
+
+<!-- the buttton -->
+<button id="changeTextButton">Change Text</button>
+
+<!-- the existing HTML element that will have its text changed -->
+<p id="myText">This is the text </p>
+
+<script>
+// Add an listener to the button so it responds when someone clicks
+document.getElementById("changeTextButton").addEventListener("click", function() {
+    // Change the text of the element with "myText"
+    document.getElementById("myText").textContent = "Hello, Check !";});
+</script>
