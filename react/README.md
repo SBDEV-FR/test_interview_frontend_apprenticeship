@@ -1,4 +1,4 @@
-Note : for the second task, there is a little error, i renamed the component file so it is easier for you, and i forgot to modify the t2app.js imports. 
+Note : for the second task, there is a little error, i renamed the component file ( i added "t2") so it is easier for you, and i forgot to modify the t2app.js imports. 
 
 
 
