@@ -5,7 +5,7 @@ import Greeting from './greeting';
 function App() {
   return (
     <div>
-      <Greeting name="Selsabil" /> 
+      <Greeting name="Selsabil" /> //greeting myself for example
     </div>
   );
 }
